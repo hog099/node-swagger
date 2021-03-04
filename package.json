@@ -1,0 +1,33 @@
+{
+  "name": "node-swagger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.ts",
+  "scripts": {
+    "dev": "nodemon --watch src/ --exec ts-node src/server.ts -e ts",
+    "build": "rm -rf dist && tsc",
+    "run-prod": "ts-node-dev dist/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "14.15.4"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "swagger-ui-express": "^4.1.6"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.10",
+    "@types/express": "^4.17.11",
+    "@types/node": "^14.14.31",
+    "@types/swagger-ui-express": "^4.1.2",
+    "nodemon": "^2.0.7",
+    "typescript": "^4.2.2"
+  }
+}
